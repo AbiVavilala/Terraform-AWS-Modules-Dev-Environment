@@ -3,6 +3,8 @@
 resource "aws_vpc" "Flask_VPC" {
   cidr_block = var.vpc_cidr
   tags = var.vpc_tags
+  enable_dns_support = true
+  enable_dns_hostnames = true
 }
 
 # Create public subnet
