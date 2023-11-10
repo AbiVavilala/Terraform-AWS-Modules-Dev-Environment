@@ -1,6 +1,6 @@
 module "FlaskVPC" {
 source    = "./modules/VPC"
-vpc_cidr  = "10.200.0.0/16"
+vpc_cidr  = "10.200.0.1/16"
 }
 
 module "Flaskec2" {
